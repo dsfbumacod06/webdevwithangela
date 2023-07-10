@@ -1,0 +1,5 @@
+CSS 
+    - Cascading Style Sheets
+    - The way that the style is applied cascades like a waterfall
+    - Most general -> most specific
+    - 

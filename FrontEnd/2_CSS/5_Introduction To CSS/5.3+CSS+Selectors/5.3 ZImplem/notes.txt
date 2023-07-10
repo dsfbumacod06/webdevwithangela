@@ -1,0 +1,50 @@
+h1 {
+    // css code
+}
+
+Element selector
+    - selects an element tag
+    - in the example, the css will be applied to all element with this tag.
+
+.classValue {
+    // css code
+}
+
+Class Selector
+    - selects a class
+    - class -> an attribute to an element
+            -> can be applied to multiple elements
+
+#idValue {
+    // css code
+}
+
+Id Selector
+    - selects an id
+    - id -> an attribute to an element
+         -> should only be applied to one element
+
+
+p[draggable]{
+    // css code
+}
+
+p[draggable="true"]{
+    // css code
+}
+
+Attribute Selector
+    - select attributes
+    - given the example above:
+        - p is the html element to be selected
+        - draggable is the attribute that needs to be present
+        - css is applied to all paragraph elements with the draggable attribute defined.
+        - can be further specified by setting a value
+
+
+*{
+    //css code
+}
+
+Universal Selector
+    - selects all.

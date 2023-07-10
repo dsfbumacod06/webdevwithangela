@@ -1,0 +1,14 @@
+Inline -> Single Element
+    - goes into the same line as a particular html line.
+    - found on opening tag
+    - style attribute -> global -> contains property:value
+
+Internal -> Single Web Page
+    - uses style tags <style></style>
+    - selector -> css (property:value)
+    - not recommended for multi-page website
+
+External -> Multi-page Web
+    - lives in a separate file.
+    - selector -> css (property:value)
+    - referenced in the index.html, through <link />, rel + href
