@@ -1,0 +1,34 @@
+4 Types of Positioning
+
+Relative
+Absolute
+Fixed
+Static
+
+
+Static Positioning
+    - HTML Default
+    - goes right after the previous element
+
+Relative Positioning  
+    - item is positioned relative to its default positioning (static)
+
+Absolute Positioning
+    - item is positioned relative to the nearest positioned anscestor, 
+    - if an ancestor does not exist, it is positioned relative to the top left corner of the page.
+    - nearest anscestor (parent?)
+    - example is 
+        <div> -> relative
+            <div></div> -> absolute
+        </div>
+
+Fixed Positioning   
+    - relative to the top left of the browser.
+    - fixed, even when scrolling unlike absolute positioning
+
+
+Z (zed) Index
+    - determines which elements go on top of which element in the z-axis.
+    - z-index: -1
+    - default 0 
+    - can be auto, inherit, initial, revert, unset

@@ -1,0 +1,41 @@
+If there are css rules targeting the same element. The hierarchy goes from:
+External < Internal < Inline 
+External being applied first, and inline being applied last, and therefore used in the end.
+
+
+4 Broad Categories for determining the level of importance:
+Position < Specificity < Type < Importance
+
+-> Position
+    example: 
+        li {
+            color: red;
+            color: blue;
+        }
+        the color blue will be applied.
+        the lower they are in the code, the more important they are.
+
+
+
+-> Specificity
+    -> refers to how specific a selector is.
+    example:
+    li {color: blue}
+    .first-class {color: red}
+    li[draggable] {color: purple}
+    #first-id{color:orange}
+
+    The example above is in order of hierarchy, going from least to most important.
+    element < class < attribute < id
+
+     
+-> Type
+    -> External < Internal < Inline
+
+-> Importance
+    -> !important keyword
+    example:
+    li {
+        color: red;
+        color green !important;
+    }

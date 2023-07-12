@@ -1,0 +1,58 @@
+ways to combine selectors
+
+.class htmlElem {
+    css code
+}
+
+Group 
+    -> applies to both selectors
+    -> selector, selector {css code}
+    example:
+        
+        h1, h2 {
+            color: blueviolet;
+        }
+
+Child
+    -> selects the direct child of another selector
+    -> only one level deep
+    -> slector > selector {css code}
+    examples:
+
+        div > p {
+            color: firebrick;
+        }
+
+        .box > .done {
+            color: yellow;
+        }
+
+
+Descendant
+    -> applies the css on the descendant as long as it has a matching ancestor
+    -> anscestor descendant {css code}
+    -> selector selector {css code}
+    examples:
+
+    .box ul {
+        color: green;
+    }
+
+    div li {
+        color: blue;
+    }    
+
+
+Chaining
+    -> apply where all selectors are true
+    -> if you're looking to use an element, always start on an element, then add other selectors. This is because .doneli vs li.done ; The former can be mistaken for a class value of doneli
+    -> selectorselector {css code}
+    examples:
+
+    li.done {
+        color: seagreen;
+    }
+
+
+
+Each of these selectors can be combined with other selectors.
